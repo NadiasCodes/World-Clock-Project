@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock - Nadia Bouli</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
     <link rel="stylesheet" href="css/style.css" />
@@ -17,28 +19,31 @@
         <option value="">Iceland</option>
       </select>
 
-      <div class="cities">
+      <div class="cities" id="tokyo">
         <div>
           <h2>Tokyo 🇯🇵</h2>
-          <div class="date">August 15th 2022</div>
+          <div class="date"></div>
         </div>
         <div>
-          <div class="time">1:48:15 <small>AM</small></div>
+          <div class="time"></div>
         </div>
       </div>
-      <div class="cities">
+      <div class="cities" id="paris">
         <div>
           <h2>Paris 🇫🇷</h2>
-          <div class="date">August 15th 2022</div>
+          <div class="date"></div>
         </div>
         <div>
-          <div class="time">1:48:15 <small>AM</small></div>
+          <div class="time"></div>
         </div>
       </div>
     </div>
     <footer>
       This project was coded with 🤍 by
-      <a href="www.linkedin.com/in/konstantina-b-71451829a" target="_blank" class="coder"
+      <a
+        href="www.linkedin.com/in/konstantina-b-71451829a"
+        target="_blank"
+        class="coder"
         ><strong> Nadia Bouli</strong></a
       >
       and is
