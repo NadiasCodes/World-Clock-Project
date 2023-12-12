@@ -41,7 +41,7 @@ select {
   font-family: "Dancing Script", cursive;
 }
 select:hover {
-  background-color: #d1bbb1;
+  background-color: #d1bbb171;
 }
 
 .container {
@@ -85,7 +85,6 @@ a {
   text-decoration: none;
   color: #6e5b6f;
   font-weight: bold;
-  
 }
 a:hover {
   color: #b19eb2;

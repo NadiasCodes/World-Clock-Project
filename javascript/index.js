@@ -19,7 +19,7 @@ function updateTime() {
 
   parisDateElement.innerHTML = parisTime.format("MMM Do YYYY");
   parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
-  
+
   //Vancouver
   let vancouverElement = document.querySelector("#vancouver");
   let vancouverDateElement = vancouverElement.querySelector(".date");
