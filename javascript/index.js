@@ -18,6 +18,18 @@ function updateTime() {
   parisDateElement.innerHTML = parisTime.format("MMM Do YYYY");
   parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
 }
+
+//Vancouver
+let vancouverElement = document.querySelector("#vancouver");
+let vancouverDateElement = vancouverElement.querySelector(".date");
+let vancouverTimeElement = vancouverElement.querySelector(".time");
+let vancouverTime = moment().tz("America/Vancouver");
+
+vancouverDateElement.innerHTML = vancouverTime.format("MMM Do YYYY");
+vancouverTimeElement.innerHTML = vancouverTime.format(
+  "h:mm:ss [<small>]A[</small>]"
+);
+
 updateTime();
 setInterval(updateTime, 1000);
 
@@ -39,7 +51,8 @@ function updateCity(event) {
               "h:mm:ss"
             )}<small> ${cityTime.format("A")}</small></div>
           </div>
-          <a href="/"> All cities</a>`;
+
+         <a href= "index.html">All cities`;
 }
 
 let citiesSelectElement = document.querySelector("#city");
