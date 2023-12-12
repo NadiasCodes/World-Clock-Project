@@ -3,7 +3,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- 
 }
 
 h1 {
@@ -12,26 +11,22 @@ h1 {
 
   color: #6e5b6f;
   font-family: "Great Vibes", cursive;
-  text-shadow: 5px 5px 10px #cfad80;
+  text-shadow: 5px 5px 10px #a694a9;
 }
 
 h2 {
   margin: 0 0 5px;
   font-size: 28px;
-  color:#716F7F;
-  font-family: 'Nanum Myeongjo', serif;
- 
+  color: #716f7f;
+  font-family: "Nanum Myeongjo", serif;
 }
 
 footer {
-  line-height: 3;
   text-align: center;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.6);
   height: 20px;
-  font-family: 'Nanum Myeongjo', serif;
-  
-   
+  font-family: "Nanum Myeongjo", serif;
 }
 
 select {
@@ -43,7 +38,7 @@ select {
   background-color: #ece1d3;
   border: 3px solid transparent;
   transition: all 500ms ease-in-out;
-   font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 select:hover {
   background-color: #d1bbb1;
@@ -68,15 +63,13 @@ select:hover {
   margin: 10px 0;
   border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
   padding: 30px 0;
- 
 }
 
 .time {
   font-size: 45px;
   font-weight: bold;
   color: #6e5b6f;
-  font-family: 'Lobster', sans-serif;
-  
+  font-family: "Lobster", sans-serif;
 }
 
 .time small {
@@ -88,11 +81,22 @@ select:hover {
   opacity: 0.5;
 }
 
+a {
+  text-decoration: none;
+  color: #6e5b6f;
+  font-weight: bold;
+  
+}
+a:hover {
+  color: #b19eb2;
+}
 .coder {
   text-decoration: none;
-  color: #433f56;
+  color: #6e5b6f;
+  font-family: "Lobster", sans-serif;
+  font-size: 18px;
 }
 
 .coder:hover {
-  color: #6e5b6f;
+  color: #b19eb2;
 }

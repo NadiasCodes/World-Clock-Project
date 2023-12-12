@@ -1,13 +1,15 @@
-//tokyo
+//sydney
 
 function updateTime() {
-  let tokyoElement = document.querySelector("#tokyo");
-  let tokyoDateElement = tokyoElement.querySelector(".date");
-  let tokyoTimeElement = tokyoElement.querySelector(".time");
-  let tokyoTime = moment().tz("Asia/Tokyo");
+  let sydneyElement = document.querySelector("#sydney");
+  let sydneyDateElement = sydneyElement.querySelector(".date");
+  let sydneyTimeElement = sydneyElement.querySelector(".time");
+  let sydneyTime = moment().tz("Australia/Sydney");
 
-  tokyoDateElement.innerHTML = tokyoTime.format("MMM Do YYYY");
-  tokyoTimeElement.innerHTML = tokyoTime.format("h:mm:ss [<small>]A[</small>]");
+  sydneyDateElement.innerHTML = sydneyTime.format("MMM Do YYYY");
+  sydneyTimeElement.innerHTML = sydneyTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
 
   //paris
   let parisElement = document.querySelector("#paris");
@@ -17,18 +19,18 @@ function updateTime() {
 
   parisDateElement.innerHTML = parisTime.format("MMM Do YYYY");
   parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
+  
+  //Vancouver
+  let vancouverElement = document.querySelector("#vancouver");
+  let vancouverDateElement = vancouverElement.querySelector(".date");
+  let vancouverTimeElement = vancouverElement.querySelector(".time");
+  let vancouverTime = moment().tz("America/Vancouver");
+
+  vancouverDateElement.innerHTML = vancouverTime.format("MMM Do YYYY");
+  vancouverTimeElement.innerHTML = vancouverTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
 }
-
-//Vancouver
-let vancouverElement = document.querySelector("#vancouver");
-let vancouverDateElement = vancouverElement.querySelector(".date");
-let vancouverTimeElement = vancouverElement.querySelector(".time");
-let vancouverTime = moment().tz("America/Vancouver");
-
-vancouverDateElement.innerHTML = vancouverTime.format("MMM Do YYYY");
-vancouverTimeElement.innerHTML = vancouverTime.format(
-  "h:mm:ss [<small>]A[</small>]"
-);
 
 updateTime();
 setInterval(updateTime, 1000);
@@ -52,7 +54,7 @@ function updateCity(event) {
             )}<small> ${cityTime.format("A")}</small></div>
           </div>
 
-         <a href= "index.html">All cities`;
+         `;
 }
 
 let citiesSelectElement = document.querySelector("#city");
